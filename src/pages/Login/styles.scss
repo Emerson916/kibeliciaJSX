@@ -41,8 +41,19 @@
     .main-content{
         display: flex;
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
+        justify-content: center;
         text-align: center;
+
+        .container-logo{
+            width: 100px;
+            height: 100px;
+            background: #33FFA9;
+            border-radius: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
        
         > img{
             align-self: center;
@@ -51,7 +62,7 @@
         h2{
             font-size: 36px;
             margin: 64px 0;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Risque', cursive;
         }
 
         form{
@@ -70,11 +81,14 @@
             }
 
             button{
-                margin-top: 16px;
+                margin-top: 32px;
                 width: 300px;
                 border-radius: 90px;
                 background: #33FFA9;
                 color: #000;
+                font-family: ' Risque ', cursive;
+                font-weight: 700;
+                font-size: 16px;
             }
 
             input{
@@ -92,11 +106,10 @@
             }
         }
     }
-
     
     .separator{
         font-size: 16px;
-        color: #A8A8B3;
+        color: #000;
         margin: 32px 0;
         display: flex;
         align-items: center;
@@ -104,6 +117,7 @@
         &::after{
             content: '';
             flex: 1;
+            width: 14vw;
             height: 1px;
             background: #00BFA6;
             margin-left: 16px;
@@ -112,29 +126,29 @@
         &::before{
             content: '';
             flex: 1;
+            width: 14vw;
             height: 1px;
             background: #00BFA6;
             margin-right: 16px;
         }
     }
+    
 
     .auth-google{
         width:300px;
         height: 50px;
         border-radius: 90px;
+        font-weight: bold;
+        font-size: 16px;
         
         display: flex;
         justify-content: center;
         align-items: center;
     
-        background: rgb(92, 127, 241);
-        color: #FFF;
-    
-    
         cursor: pointer;
-        border: 0;
+        border: 1px solid rgb(92, 127, 241);
         transition: filter 0.2s;
-    
+
         img {
             width: 24px;
             height: 24px;
@@ -148,12 +162,14 @@
 
     .container-cadaster{
         display: flex;
-        
+        justify-content: flex-end; 
+        width: 600px;
+ 
     }
 
     .cadaster{
         display: flex;
         flex-direction: column;
+        font-weight: bold;
     }
-    
 }

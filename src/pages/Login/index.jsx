@@ -1,5 +1,6 @@
 import Login_image from "../../assets/Login/imgLogin.svg";
 import icon_google from "../../assets/Login/iconGoogle.png";
+import icon_burguer from "../../assets/Login/icon_burguer.svg";
 import { Button } from "../../Components/Button";
 import "./styles.scss";
 
@@ -14,7 +15,10 @@ export function Login() {
 
             <main>
                 <div className="main-content">
-                    <img src="" alt="logo" />
+                    
+                    <div className="container-logo">
+                        <img src={icon_burguer} alt="logo"/>
+                    </div>
 
                     <h2>Kibelicia</h2>
 
@@ -22,11 +26,10 @@ export function Login() {
                         <input
                             type="text"
                             placeholder="Dígite seu E-mail"
-
                         />
 
                         <input
-                            type="text"
+                            type="password"
                             placeholder="Dígite sua senha"
                         />
 
