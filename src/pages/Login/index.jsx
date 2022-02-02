@@ -1,10 +1,13 @@
+import { Link, useNavigate } from "react-router-dom";
 import Login_image from "../../assets/Login/imgLogin.svg";
 import icon_google from "../../assets/Login/iconGoogle.png";
 import icon_burguer from "../../assets/Login/icon_burguer.svg";
 import { Button } from "../../Components/Button";
-import "./styles.scss";
+import "./login.scss";
 
 export function Login() {
+    const navigate = useNavigate()
+
     return (
         <div id="page-auth">
             <aside>
@@ -15,9 +18,9 @@ export function Login() {
 
             <main>
                 <div className="main-content">
-                    
+
                     <div className="container-logo">
-                        <img src={icon_burguer} alt="logo"/>
+                        <img src={icon_burguer} alt="logo" />
                     </div>
 
                     <h2>Kibelicia</h2>
@@ -40,15 +43,14 @@ export function Login() {
                     </form>
                     <div className="separator"> ou </div>
 
-
                     <button onClick="" className="auth-google">
                         <img src={icon_google} alt="icon-google" />
                         Logar com o Google
                     </button>
 
                     <div className="container-cadaster">
-                        <p  className="cadaster">Não tem cadastro ?
-                            <a href="">CADASTRE-SE</a></p>
+                        <p className="cadaster">Não tem cadastro ?
+                            <Link to="/register">CADASTRE-SE</Link></p>
                     </div>
                 </div>
             </main>
