@@ -1,4 +1,4 @@
-#page-auth {
+#page-register {
     display: flex;
     height: 100vh;
 
@@ -45,10 +45,9 @@
         
 
         h2{
-            margin-bottom: 120px;
+            margin-bottom: 60px;
             font-size: 36px;
-            font-family: 'Risque', cursive;
-            
+            font-family: 'Risque', cursive;  
         }
 
         form{
@@ -60,16 +59,14 @@
         
             button{
                 height: 50px;
-                margin-top: 32px;
-                width: 300px;
+                width: 200px;
+                margin-top: 50px;
                 border-radius: 90px;
                 border: none;
                 background: #33FFA9;
                 color: #000;
                 font-family: ' Risque ', cursive;
-                
-                font-size: 16px;
-                
+                font-size: 16px;               
             }
         }
 

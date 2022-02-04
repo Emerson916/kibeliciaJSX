@@ -8,6 +8,10 @@ import "./login.scss";
 export function Login() {
     const navigate = useNavigate()
 
+    function navegacao() {
+        navigate('/home')
+    } 
+
     return (
         <div id="page-auth">
             <aside>
@@ -36,7 +40,7 @@ export function Login() {
                             placeholder="Dígite sua senha"
                         />
 
-                        <Button type="submit">
+                        <Button onClick={navegacao} type="submit">
                             Login
                         </Button>
 

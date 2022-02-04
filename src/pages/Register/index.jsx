@@ -4,7 +4,7 @@ import "./register.scss";
 
 export function Register() {
     return (
-        <div id="page-auth">
+        <div id="page-register">
             <aside>
                 <strong>Falta pouco para matar sua fome!</strong>
                 <p>Estamos quase la, registre-se para logar no App</p>
@@ -32,10 +32,10 @@ export function Register() {
                             placeholder="Cep da rua"
                         />
 
-                        <div  className="container-input">
+                        <div className="container-input">
 
                             <input
-                                
+
                                 type="text"
                                 placeholder="Nome da Rua"
                             />
@@ -52,9 +52,12 @@ export function Register() {
                             placeholder="Estado"
                         />
 
-                    <button>
-                        Confirmar
-                    </button>
+                        <div className=" buttons-container">
+                            <button>
+                                Confirmar
+                            </button>
+                        </div>
+
                     </form>
                 </div>
             </main>
