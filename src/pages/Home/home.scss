@@ -2,34 +2,34 @@
     align-items: stretch;
     height: 100vh;
 
-    header{
+    header {
         height: 90px;
         width: 100%;
-        background: #00BFA6;
+        background: #00bfa6;
         display: flex;
         align-items: center;
         justify-content: space-between;
 
-        >h2{
+        > h2 {
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 20px 40px;
             font-size: 36px;
-            font-family: 'Risque', cursive;
+            font-family: "Risque", cursive;
         }
 
-        >input{
+        > input {
             height: 50px;
             width: 450px;
             font-size: 16px;
             padding-left: 20px;
             border-radius: 10px;
-            border: none;  
+            border: none;
         }
 
-        div > h3{
-            color: #FFF;
+        div > h3 {
+            color: #fff;
         }
 
         div > p {
@@ -37,79 +37,84 @@
             font-weight: bold;
         }
 
-        .container-icons{
+        .container-icons {
             display: flex;
             align-items: center;
             padding: 50px;
             gap: 20px;
 
-            >img {
+            
+            > img {
                 width: 24px;
                 height: 24px;
             }
-
-            #icon_perfil{
-                width: 48px;
-                height: 48px;
-            }
         }
-    }
 
-    .perfil-user-navegation{
-        height: 100px;
-        display: flex;  
-        justify-content: center;
 
-        >ul{
-            width: 500px;
-            display: flex;
-            justify-content: space-between; 
-            align-items: center;
-            list-style: none;
-            font-size: 24px;
-            font-family:  sans-serif;
-
-            >li{
-                cursor: pointer;
-            }
-        }
-    }
-    
-    .tipos-comidas {
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        margin-top: 30px;
-        
-        > ul {
-            width: 100%;
-            display: flex;
-            justify-content: space-around; 
-            align-items: center;
-            list-style: none;
-            font-size: 24px;
-            font-family:  sans-serif; 
-
-            >li{
-                width: 180px;
-                height: 70px;
-                display: flex;
-                flex-direction: column;
-                border-radius: 15px;
-                align-items: center;
-                justify-content: center;
-                background-color: #00BFA6;
-                cursor: pointer;
-
-                >img{
-                    width: 80px;
-                    height: 100px;
-                    margin: 20px;
-                }
-            }
+        #icon_perfil {
+            width: 48px;
+            height: 48px;
         }
     }
 }
 
+.perfil-user-navegation {
+    height: 100px;
+    display: flex;
+    justify-content: center;
 
+    > ul {
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        font-size: 24px;
+        font-family: sans-serif;
 
+        > li {
+            cursor: pointer;
+        }
+    }
+}
+
+.tipos-comidas {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    > ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        font-size: 24px;
+        font-family: sans-serif;
+
+        > li {
+            width: 180px;
+            height: 70px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 15px;
+            align-items: center;
+            justify-content: center;
+            background-color: #00bfa6;
+            cursor: pointer;
+
+            
+            > img {
+                width: 80px;
+                height: 100px;
+                margin: 20px;
+            }
+            
+            &:hover {
+                transform: scale(1.05);
+                transition: 0.5s;
+            }
+        }
+    }
+}
