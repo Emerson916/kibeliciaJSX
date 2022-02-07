@@ -1,0 +1,18 @@
+.CarroselStyle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.item{
+    height: 300px;
+    width: 100%;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #33FFA9;
+    margin: 0 15px;
+  
+}

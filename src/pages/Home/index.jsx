@@ -3,13 +3,8 @@ import configIcon from "../../assets/Home/config.svg";
 import helpIcon from "../../assets/Home/help.svg";
 import notificationIcon from "../../assets/Home/notification.svg";
 import perfilIcon from "../../assets/Home/imgPerfil.svg";
-import lanchesIcon from "../../assets/Home/lanches.svg";
-import bebidasIcon from "../../assets/Home/bebidas.svg";
-import sobremesasIcon from "../../assets/Home/sobremesa.svg";
-import marmitaIcon from "../../assets/Home/marmita.svg";
-import saudavelIcon from "../../assets/Home/saudavel.svg";
-import frutasIcon from "../../assets/Home/frutas.svg";
-
+import { TypesFood } from "../../Components/TypesFood";
+import { Carrosel } from "../../Components/Carousel";
 
 export function Home() {
     return (
@@ -18,7 +13,6 @@ export function Home() {
                 <h2>Kibelicia</h2>
 
                 <input
-
                     type="text"
                     placeholder="Pesquise por item ou loja"
                 />
@@ -39,7 +33,6 @@ export function Home() {
                     <img id="icon_perfil" src={perfilIcon} alt="" />
 
                 </div>
-
             </header>
 
             <nav className="perfil-user-navegation">
@@ -51,38 +44,12 @@ export function Home() {
             </nav>
 
             <nav className="tipos-comidas">
-                <ul>
-                    <li>
-                        <img src={lanchesIcon} alt=""/>
-                        <p>Lanches</p>
-                    </li>
-
-                    <li>
-                        <img src={bebidasIcon} alt=""/>
-                        <p>Bebidas</p>
-                    </li>
-
-                    <li>
-                        <img src={sobremesasIcon} alt=""/>
-                        <p>Sobremesas</p>
-                    </li>
-
-                    <li>
-                        <img src={marmitaIcon} alt=""/>
-                        <p>Marmita</p>
-                    </li>
-
-                    <li>
-                        <img src={saudavelIcon} alt=""/>
-                        <p>Saudável</p>
-                    </li>
-
-                    <li>
-                        <img src={frutasIcon} alt=""/>
-                        <p>Frutas</p>
-                    </li>
-                </ul>
+                <TypesFood />
             </nav>
+
+            <div>
+                <Carrosel/>
+            </div>
         </div>
     );
 }

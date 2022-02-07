@@ -1,0 +1,40 @@
+.tipos-comidas {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+    > ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+        font-size: 24px;
+        font-family: sans-serif;
+
+        > li {
+            width: 165px;
+            height: 60px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 15px;
+            align-items: center;
+            justify-content: center;
+            background-color: #00bfa6;
+            cursor: pointer;
+
+            
+            > img {
+                width: 70px;
+                height: 100px;
+                margin: 20px;
+            }
+            
+            &:hover {
+                transform: scale(1.05);
+                transition: 0.5s;
+            }
+        }
+    }
+}
