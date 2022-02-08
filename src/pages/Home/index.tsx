@@ -48,7 +48,12 @@ export function Home() {
             </nav>
 
             <div>
-                <Carrosel/>
+                <Carrosel />
+            </div>
+
+            <div className="container-sliders">
+                <p>O que você quer comer hoje ?</p>
+
             </div>
         </div>
     );

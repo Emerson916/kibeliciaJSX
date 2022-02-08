@@ -3,15 +3,29 @@ import Carousel from "react-elastic-carousel";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "./styles.scss"
+import promocao_slide from "../../assets/Carousel/promocao.svg";
+import promocao_hamburguer from "../../assets/Carousel/promocao.jpeg";
+
 
 export function Carrosel() {
-    return(
+    return (
         <Swiper className="mySwiper">
-            <SwiperSlide>Slide 1</SwiperSlide>
-            <SwiperSlide>Slide 2</SwiperSlide>
-            <SwiperSlide>Slide 3</SwiperSlide>
-            <SwiperSlide>Palmeiras não tem mundial</SwiperSlide>
-            
+            <SwiperSlide>
+                <img src={promocao_slide} alt="combo hambuguer" />
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <img src={promocao_hamburguer} alt="combo hambuguer" />
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <img src={promocao_slide} alt="combo hambuguer" />
+            </SwiperSlide>
+
+            <SwiperSlide>
+                <img src={promocao_slide} alt="combo hambuguer" />
+            </SwiperSlide>
+
         </Swiper>
     );
 }

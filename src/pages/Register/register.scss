@@ -2,75 +2,73 @@
     display: flex;
     height: 100vh;
 
-    aside{
+    aside {
         flex: 5;
-        background: linear-gradient(180deg, #33FFA9 10%, #308570 120%);
-        color: #FFF;
+        background: linear-gradient(180deg, #33ffa9 10%, #308570 120%);
+        color: #fff;
 
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: 0px 80px;
 
-        img{
+        img {
             margin-top: 120px;
             max-width: 600px;
         }
 
-        strong{
-            font: 700 36px sans-serif; 
+        strong {
+            font: 700 36px sans-serif;
             text-align: center;
         }
 
-        p{
+        p {
             font-size: 24px;
             line-height: 32px;
             margin-top: 16px;
-            color: #F8F8F8;
+            color: #f8f8f8;
             text-align: center;
         }
     }
 
-    main{
+    main {
         flex: 10;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
-    .main-content{
+    .main-content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        
 
-        h2{
+        h2 {
             margin-bottom: 60px;
             font-size: 36px;
-            font-family: 'Risque', cursive;  
+            font-family: "Risque", cursive;
         }
 
-        form{
+        form {
             display: flex;
             width: 600px;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-        
-            button{
+
+            button {
                 height: 50px;
                 width: 200px;
                 margin-top: 50px;
                 border-radius: 90px;
                 border: none;
-                background: #33FFA9;
+                background: #33ffa9;
                 color: #000;
-                font-family: ' Risque ', cursive;
-                font-size: 16px;               
+                font-size: 16px;
             }
         }
 
-        input{
+        input {
             width: 100%;
             height: 60px;
             margin-top: 20px;
@@ -79,15 +77,14 @@
             border: 1px solid #308570;
         }
 
-        .container-input{
+        .container-input {
             width: 100%;
             display: flex;
             gap: 20px;
-        
-            .input-number{
+
+            .input-number {
                 width: 40%;
             }
         }
-
-    }    
+    }
 }
