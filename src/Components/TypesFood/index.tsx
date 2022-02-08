@@ -10,7 +10,7 @@ export function TypesFood() {
     return (
 
         <ul>
-            <li>
+            <li className="verdeEscuro">
                 <img src={lanchesIcon} alt="" />
                 <p>Lanches</p>
             </li>
@@ -20,12 +20,12 @@ export function TypesFood() {
                 <p>Bebidas</p>
             </li>
 
-            <li>
+            <li className="verdeClaro">
                 <img src={sobremesasIcon} alt="" />
                 <p>Sobremesas</p>
             </li>
 
-            <li>
+            <li className="verdeEscuro">
                 <img src={marmitaIcon} alt="" />
                 <p>Marmita</p>
             </li>
@@ -35,7 +35,7 @@ export function TypesFood() {
                 <p>Saudável</p>
             </li>
 
-            <li>
+            <li className="verdeClaro">
                 <img src={frutasIcon} alt="" />
                 <p>Frutas</p>
             </li>

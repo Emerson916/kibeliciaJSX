@@ -1,18 +1,52 @@
-.CarroselStyle{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
+// .CarroselStyle{
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin-top: 100px;
+// }
+
+// .item{
+//     height: 300px;
+//     width: 100%;
+//     border-radius: 30px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background-color: #33FFA9;
+//     margin: 0 15px;
+  
+// }
+
+.swiper {
+  width: 95%;
+  margin-top: 150px;
+  border-radius: 20px;
 }
 
-.item{
-    height: 300px;
-    width: 100%;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #33FFA9;
-    margin: 0 15px;
-  
+.swiper-slide {
+  height: 300px ;
+  text-align: center;
+  font-size: 18px;
+  background: #00bfa6;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

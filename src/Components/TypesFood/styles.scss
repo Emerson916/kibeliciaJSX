@@ -25,6 +25,7 @@
             cursor: pointer;
 
             
+            
             > img {
                 width: 70px;
                 height: 100px;
@@ -35,6 +36,14 @@
                 transform: scale(1.05);
                 transition: 0.5s;
             }
+        }
+
+        .verdeEscuro{
+            background-color: #308570;
+        }
+
+        .verdeClaro{
+            background-color: #33FFA9;
         }
     }
 }

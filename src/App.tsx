@@ -3,7 +3,6 @@ import { Home } from "./pages/Home";
 import { Login } from "./pages/Login/index";
 import { Register } from "./pages/Register";
 
-
 function App() {
   return (
     <BrowserRouter>
